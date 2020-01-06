@@ -75,6 +75,11 @@ public class FindDayTests {
     }
 
     @Test
+    public void givenInputWithDayAndYearToCheckWithZeroThenReturnErrorString() {
+        assertEquals(MESSAGE_DAY_ERROR + MESSAGE_YEAR_ERROR, findDay.findDay(4, 0, 0), MESSAGE);
+    }
+
+    @Test
     public void givenInputWithCheckAllWithZeroThenReturnErrorString() {
         assertEquals(MESSAGE_MONTH_ERROR + MESSAGE_DAY_ERROR + MESSAGE_YEAR_ERROR, findDay.findDay(0, 0, 0), MESSAGE);
     }
