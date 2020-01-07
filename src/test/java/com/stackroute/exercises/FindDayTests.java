@@ -15,7 +15,7 @@ public class FindDayTests {
     private static final String MESSAGE_YEAR_ERROR = "Give proper year";
 
     @BeforeEach
-    public void setup() {
+    public void setUp() {
         findDay = new FindDay();
     }
 
