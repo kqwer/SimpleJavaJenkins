@@ -2,14 +2,14 @@
 
 **Given date, find the day of given date using LocaleDate**
 
-**This exercise contains a class named FindDay with the following methods:**
+**This exercise contains a class named FindDay with the following method:**
 
 
     +findDay(int,int,int) : String
         -Should get month,day,year as input and return result 
-        -Should return "Give proper month" if given month is less than 1 and greater than 12
-        -Should return "Give proper day" if given day is less than 1 and greater than 31
-        -Should return "Give proper year" if given month is less than 2000 and greater than 3000
+        -Should return "Give month in range" if given month is less than 1 and greater than 12
+        -Should return "Give day in range" if given day is less than 1 and greater than 31
+        -Should return "Give year in range" if given month is less than 2000 and greater than 3000
         -Should find day of given input and return it.
         
 
@@ -24,19 +24,19 @@
     13 4 2025
     
     Expected Output:
-    Give proper month
+    Give month in range
 --------------------------------------------------------
     Sample Input:
     4 32 2001
     
     Expected Output:
-    Give proper day
+    Give day in range
 --------------------------------------------------------
     Sample Input:
     0 0 200
     
     Expected Output:
-    Give proper monthGive proper dayGive proper year
+    Give month in rangeGive day in rangeGive year in range
 
 ## Instructions
 - Avoid printing unnecessary values other than expected output as given in sample

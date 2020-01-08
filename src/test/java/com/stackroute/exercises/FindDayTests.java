@@ -6,13 +6,14 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 
+
 public class FindDayTests {
     private FindDay findDay;
 
     private static final String MESSAGE = "Check the logic of your method findDay";
-    private static final String MESSAGE_DAY_ERROR = "Give proper day";
-    private static final String MESSAGE_MONTH_ERROR = "Give proper month";
-    private static final String MESSAGE_YEAR_ERROR = "Give proper year";
+    private static final String MESSAGE_DAY_ERROR = "Give day in range";
+    private static final String MESSAGE_MONTH_ERROR = "Give month in range";
+    private static final String MESSAGE_YEAR_ERROR = "Give year in range";
 
     @BeforeEach
     public void setUp() {
@@ -42,6 +43,21 @@ public class FindDayTests {
     @Test
     public void givenInputToCheckMonday() {
         assertEquals("MONDAY", findDay.findDay(6, 22, 2020), MESSAGE);
+    }
+
+    @Test
+    public void givenInputToCheckTuesday() {
+        assertEquals("TUESDAY", findDay.findDay(1, 28, 2020), MESSAGE);
+    }
+
+    @Test
+    public void givenInputToCheckWednesday() {
+        assertEquals("WEDNESDAY", findDay.findDay(4, 8, 2020), MESSAGE);
+    }
+
+    @Test
+    public void givenInputToCheckThursday() {
+        assertEquals("THURSDAY", findDay.findDay(2, 6, 2020), MESSAGE);
     }
 
     @Test
